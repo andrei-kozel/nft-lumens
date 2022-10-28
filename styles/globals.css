@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.yellow-blur {
+  position: absolute;
+  left: 0.04%;
+  right: 80.21%;
+  top: 70.54%;
+  bottom: 12.46%;
+
+  background: rgba(231, 178, 38, 0.8);
+  filter: blur(225px);
+  transform: rotate(-4.93deg);
+}
+
+.heare-blur-1 {
+  position: absolute;
+left: 59.34%;
+right: 25.33%;
+top: 68.93%;
+bottom: 5.57%;
+
+background: #BB00AB;
+filter: blur(175px);
+transform: rotate(-4.93deg);
+
+}
+
+.header-blur-2 {
+  position: absolute;
+left: 76.53%;
+right: 1.56%;
+top: 100.29%;
+bottom: -20.52%;
+
+background: rgba(96, 231, 206, 0.67);
+filter: blur(225px);
+transform: matrix(-0.75, -0.59, 0.72, -0.76, 0, 0);
+
+}
+.header-blur-3 {
+  position: absolute;
+left: 90.25%;
+right: -12.12%;
+top: 92.58%;
+bottom: -11.14%;
+
+background: rgba(231, 178, 38, 0.83);
+filter: blur(225px);
+transform: matrix(-0.75, -0.59, 0.72, -0.76, 0, 0);
+}
+
+.header-blur-4{
+  position: absolute;
+left: 92.42%;
+right: -14.29%;
+top: 63.97%;
+bottom: 17.47%;
+
+background: #D53D5C;
+filter: blur(225px);
+transform: matrix(-0.75, -0.59, 0.72, -0.76, 0, 0);
+
+}
