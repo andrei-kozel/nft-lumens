@@ -5,7 +5,7 @@ import Tilt from "react-tilt";
 
 const HeaderCard = () => {
   return (
-    <div className="w-full md:w-[50%] bg-customGray/50 md:bg-transparent flex justify-center items-center py-10">
+    <div className="w-full  md:w-fit bg-customGray/50 md:bg-transparent flex justify-center items-center py-10">
       <Tilt className="Tilt z-10" options={{ max: 25, scale: 1 }}>
         <div className="bg-white w-[350px] h-[500px] m-auto relative flex flex-col cursor-pointer hover:scale-105 transition-all hover:shadow-lg">
           <div className="w-full h-full relative">
