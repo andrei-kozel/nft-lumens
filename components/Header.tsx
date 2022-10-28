@@ -5,7 +5,7 @@ import HeaderCard from "./HeaderCard";
 const Header = () => {
   return (
     <div className="relative pt-24">
-      <div className="container m-auto flex flex-col  py-10 md:px-0 md:flex-row w-full justify-between items-center">
+      <div className="container m-auto flex flex-col  py-10 md:px-0 md:flex-row w-full justify-around items-center">
         <div>
           <p className="text-5xl font-bold leading-[1.7] text-center md:text-left">
             Explore, Buy and <br />
