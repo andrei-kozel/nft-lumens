@@ -69,3 +69,7 @@ filter: blur(225px);
 transform: matrix(-0.75, -0.59, 0.72, -0.76, 0, 0);
 
 }
+
+.burger:hover span {
+  width: 2rem;
+}
