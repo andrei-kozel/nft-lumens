@@ -40,6 +40,7 @@
   filter: blur(225px);
   transform: matrix(-0.75, -0.59, 0.72, -0.76, 0, 0);
 }
+
 .header-blur-3 {
   position: absolute;
   left: 90.25%;
@@ -60,6 +61,16 @@
   background: #d53d5c;
   filter: blur(225px);
   transform: matrix(-0.75, -0.59, 0.72, -0.76, 0, 0);
+}
+
+.auctions-blur-1 {
+  position: absolute;
+  left: 13.06%;
+  right: 72.69%;
+  top: 20.11%;
+  bottom: 77.56%;
+  background: rgba(231, 178, 38, 0.7);
+  filter: blur(225px);
 }
 
 .burger:hover span {
