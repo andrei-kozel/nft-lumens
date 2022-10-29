@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Clients = () => {
   return (
-    <div className="w-full flex flex-col gap-12 md:gap-10 md:flex-row justify-around items-center  py-10 xl:py-20">
+    <div className="w-full flex flex-col gap-12 md:gap-10 md:flex-row xl:container xl:m-auto justify-around items-center  py-10 md:pt-16 xl:py-20">
       <Image
         src="/assets/clients/binance.png"
         width={204}
