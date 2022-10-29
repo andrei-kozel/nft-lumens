@@ -5,10 +5,11 @@ import {
   BsFillArrowRightCircleFill,
 } from "react-icons/bs";
 import { useEffect, useState } from "react";
+import { ReactSpringCarouselItem } from "react-spring-carousel/dist/types/types";
 
 const dummyNFTs = [
   {
-    id: 1,
+    id: "1",
     image: "/assets/NFTs/nft-1.png",
     author: "Virtual Art",
     likes: "92",
@@ -16,7 +17,7 @@ const dummyNFTs = [
     time: "03:18:24",
   },
   {
-    id: 2,
+    id: "2",
     image: "/assets/NFTs/nft-2.png",
     author: "Virtual Art",
     likes: "92",
@@ -24,7 +25,7 @@ const dummyNFTs = [
     time: "03:18:24",
   },
   {
-    id: 3,
+    id: "3",
     image: "/assets/NFTs/nft-3.png",
     author: "Virtual Art",
     likes: "92",
@@ -32,7 +33,7 @@ const dummyNFTs = [
     time: "03:18:24",
   },
   {
-    id: 4,
+    id: "4",
     image: "/assets/NFTs/nft-3.png",
     author: "Virtual Art",
     likes: "92",
@@ -65,12 +66,15 @@ const Carousel = () => {
 
   const { carouselFragment, slideToPrevItem, slideToNextItem } =
     useSpringCarousel({
+      slideType: "fixed",
       itemsPerSlide: slidesAmount,
       withLoop: true,
-      items: dummyNFTs.map((i) => ({
-        id: i.id as number,
-        renderItem: <Card card={i} />,
-      })),
+      items: dummyNFTs.map(
+        (i): ReactSpringCarouselItem => ({
+          id: i.id as string,
+          renderItem: <Card card={i} />,
+        })
+      ),
     });
 
   return (
