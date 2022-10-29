@@ -7,7 +7,7 @@ const Header = () => {
     <div className="relative pt-24">
       <div className="container m-auto flex flex-col py-10 md:px-0 md:flex-row w-full justify-around items-center">
         <div>
-          <p className="text-5xl font-bold leading-[1.7] text-center md:text-left">
+          <p className="text-4xl leading-[1.7] xl:text-5xl xl:leading-[1.7] font-bold text-center md:text-left">
             Explore, Buy and <br />
             Sell the{" "}
             <span className="text-yellow">
