@@ -76,3 +76,13 @@
 .burger:hover span {
   width: 2rem;
 }
+
+.hiw-blur {
+  position: absolute;
+  left: 50.26%;
+  right: 36.87%;
+  top: 0%;
+  bottom: 49.24%;
+  background: #D53D5C;
+  filter: blur(225px);
+}
