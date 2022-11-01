@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Clients from "../components/Clients";
 import Header from "../components/Header";
+import HowItWorks from "../components/HowItWorks";
 import LiveAuctions from "../components/LiveAuctions";
 
 const Home: NextPage = () => {
@@ -9,6 +10,7 @@ const Home: NextPage = () => {
       <Header />
       <Clients />
       <LiveAuctions />
+      <HowItWorks />
     </div>
   );
 };
