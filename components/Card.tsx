@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Button from "./Button";
 import { BsFillHeartFill, BsHeart } from "react-icons/bs";
 
 const Card = ({ card }: any) => {
+  const [isLiked, setIsLiked] = useState(false);
+
   return (
     <div className="bg-[#3D2942] p-6  my-10 m-auto">
       <div className="">
@@ -12,21 +14,37 @@ const Card = ({ card }: any) => {
 
       <div className="flex flex-row justify-between items-center  mt-5">
         <div className="flex items-center gap-2">
-          <div className="w-[50px] h-[50px] rounded-full bg-gray-400" />
+          <div className="w-[50px] h-[50px] rounded-full bg-gray-400 overflow-hidden">
+            <Image
+              src="/assets/avatar.jpg"
+              alt="avatar"
+              height={50}
+              width={50}
+              priority
+            />
+          </div>
           <div>
             <p>{card.author}</p>
-            <p>by {card.author}</p>
+            <p className="text-lightPink text-sm">by {card.author}</p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <BsHeart />
+        <div className="flex items-center gap-2 text-lightPink">
+          {isLiked ? (
+            <p className="cursor-pointer text-red-500">
+              <BsFillHeartFill />
+            </p>
+          ) : (
+            <p className="cursor-pointer">
+              <BsHeart />
+            </p>
+          )}
           <p>{card.likes}</p>
         </div>
       </div>
 
       <div className="flex justify-between items-center mt-6">
-        <p>Current Bid</p>
-        <p>{card.currentBid}</p>
+        <p className="font-light">Current Bid</p>
+        <p className="font-bold">{card.currentBid}</p>
       </div>
 
       <div className="mt-6">

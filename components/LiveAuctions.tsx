@@ -9,7 +9,9 @@ const LiveAuctions = () => {
       <Title text="Live Auctions" bgColor="bg-[#8613A5]" />
       <Carousel />
       <div className="auctions-blur-1" />
-      <Button text="View All" />
+      <div className="mt-6">
+        <Button text="View All" />
+      </div>
     </div>
   );
 };
