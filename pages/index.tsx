@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Clients from "../components/Clients";
+import Contact from "../components/Contact";
 import Header from "../components/Header";
 import HowItWorks from "../components/HowItWorks";
 import LiveAuctions from "../components/LiveAuctions";
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <HowItWorks />
       <PopularCollections />
       <TopCreators />
+      <Contact />
     </div>
   );
 };
