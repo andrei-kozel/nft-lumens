@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import HowItWorks from "../components/HowItWorks";
 import LiveAuctions from "../components/LiveAuctions";
 import PopularCollections from "../components/PopularCollections";
+import TopCreators from "../components/TopCreators";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <LiveAuctions />
       <HowItWorks />
       <PopularCollections />
+      <TopCreators />
     </div>
   );
 };
