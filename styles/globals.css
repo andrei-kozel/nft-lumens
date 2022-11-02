@@ -86,3 +86,13 @@
   background: #D53D5C;
   filter: blur(225px);
 }
+
+.popular-collections-blur {
+  position: absolute;
+  left: 0%;
+  right: 73.8%;
+  top: 28.02%;
+  bottom: 0%;
+  background: #60E7CE;
+  filter: blur(400px);
+}

@@ -81,8 +81,8 @@ const PopularCollections = () => {
     });
 
   return (
-    <div className="py-10 flex flex-col justify-center items-center">
-      <Title text="Popular Collections" bgColor="bg-[#E03054]" />
+    <div className="py-10 flex flex-col justify-center items-center ">
+      <Title text="Popular Collections" bgColor="bg-[#E03054] relative" />
       <div className="w-full flex items-center justify-between relative">
         <p className="text-4xl transition-all cursor-pointer text-white/30 hover:text-white absolute left-2 z-10">
           <BsFillArrowLeftCircleFill onClick={slideToPrevItem} />
@@ -91,6 +91,7 @@ const PopularCollections = () => {
         <p className="text-4xl transition-all cursor-pointer text-white/30 hover:text-white absolute right-2 z-10">
           <BsFillArrowRightCircleFill onClick={slideToNextItem} />
         </p>
+        <div className="popular-collections-blur" />
       </div>
       <Button text="View All" />
     </div>
