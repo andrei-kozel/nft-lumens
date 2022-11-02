@@ -4,7 +4,7 @@ import { BsYoutube, BsTwitter, BsFacebook, BsTelegram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="flex items-center flex-col w-full">
+    <div className="flex items-center flex-col w-full bg-primary/50 backdrop-blur-xl">
       <div className="flex justify-around w-full items-center md:items-start flex-col md:flex-row py-2 md:py-6">
         <div className="flex flex-col md:flex-row">
           <div className="h-full flex justify-center items-center my-6">
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-lightPink text-sm font-light leading-6 mt-4">
+      <p className="text-lightPink text-sm font-light leading-6 my-4">
         All rights reserved @ {new Date().getFullYear()}
       </p>
     </div>
