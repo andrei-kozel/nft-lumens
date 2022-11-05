@@ -5,7 +5,7 @@ const DashedLine = () => (
     <span className="border hidden md:block w-3 mr-3 border-[#794187]" />
     <span className="border hidden md:block w-3 mr-3 border-[#794187]" />
     <span className="border hidden md:block w-3 mr-3 border-[#794187]" />
-    <span className="border w-3 mr-3 border-[#794187]" />
+    <span className="border hidden md:block w-3 mr-3 border-[#794187]" />
     <span className="border w-3 mr-3 border-[#794187]" />
     <span className="border w-3 mr-3 border-[#794187]" />
     <span className="border w-3 mr-3 border-[#794187]" />

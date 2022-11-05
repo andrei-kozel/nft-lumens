@@ -5,7 +5,7 @@ import Title from "./Title";
 
 const LiveAuctions = () => {
   return (
-    <div className="py-10 md:pt-16 xl:py-20 relative flex flex-col justify-center items-center">
+    <div className="py-16 xl:py-20 relative flex flex-col justify-center items-center">
       <Title text="Live Auctions" bgColor="bg-[#8613A5]" />
       <Carousel />
       <div className="auctions-blur-1" />
