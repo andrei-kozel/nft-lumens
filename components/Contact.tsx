@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Contact = () => {
   return (
-    <div className="my-10 container flex flex-col justify-center items-center m-auto">
+    <div className="py-10 md:pt-16 xl:py-20 container flex flex-col justify-center items-center m-auto">
       <Title text="Ready for Next NFT Drop?" bgColor="none" />
       <div className="flex flex-row items-center justify-center">
         <input
