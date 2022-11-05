@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/auth/request-message.jsssagpages/api/auth/request-message.jsequest-message.jssequest-message.jss"],
   "exclude": ["node_modules"]
 }

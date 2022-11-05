@@ -1,21 +1,21 @@
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import Button from "./Button";
-import { useRouter } from "next/router";
 import Burger from "./Burger";
+import ConnectWalletButton from "./ConnectWalletButton";
+
+const active = "text-yellow border-b border-yellow";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [backgroundColor, setBackgroundColor] = useState(false);
 
   const router = useRouter();
-  const active = "text-yellow border-b border-yellow";
 
   const closeMenu = () => {
-    console.log("closed");
-
     if (isOpen) setIsOpen(false);
   };
 
@@ -72,7 +72,7 @@ const Navbar = () => {
               Community
             </a>
           </Link>
-          <Button text="Connect Wallet" />
+          <ConnectWalletButton />
         </div>
         <div className="flex md:hidden">
           <Burger setIsOpen={setIsOpen} isOpen={isOpen} />
@@ -117,7 +117,7 @@ const Navbar = () => {
                   Community
                 </a>
               </Link>
-              <Button text="Connect Wallet" />
+              <ConnectWalletButton />
             </div>
           </div>
         </div>
