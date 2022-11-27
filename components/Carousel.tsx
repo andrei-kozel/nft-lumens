@@ -6,44 +6,12 @@ import {
 } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { ReactSpringCarouselItem } from "react-spring-carousel/dist/types/types";
-
-const dummyNFTs = [
-  {
-    id: "1",
-    image: "/assets/NFTs/nft-1.png",
-    author: "Virtual Art",
-    likes: "92",
-    currentBid: "4.89 ETH",
-    time: "03:18:24",
-  },
-  {
-    id: "2",
-    image: "/assets/NFTs/nft-2.png",
-    author: "Virtual Art",
-    likes: "92",
-    currentBid: "4.89 ETH",
-    time: "03:18:24",
-  },
-  {
-    id: "3",
-    image: "/assets/NFTs/nft-3.png",
-    author: "Virtual Art",
-    likes: "92",
-    currentBid: "4.89 ETH",
-    time: "03:18:24",
-  },
-  {
-    id: "4",
-    image: "/assets/NFTs/nft-3.png",
-    author: "Virtual Art",
-    likes: "92",
-    currentBid: "4.89 ETH",
-    time: "03:18:24",
-  },
-];
+import { useLumensStore } from "../store/store";
 
 const Carousel = () => {
   const [slidesAmount, setSlidesAmount] = useState(4);
+  const { lumens } = useLumensStore((state) => state);
+  const nfts = lumens.slice(0, 10);
 
   const changeSlidesAmount = () => {
     const windowWidth = window.innerWidth;
@@ -69,12 +37,10 @@ const Carousel = () => {
       slideType: "fixed",
       itemsPerSlide: slidesAmount,
       withLoop: true,
-      items: dummyNFTs.map(
-        (i): ReactSpringCarouselItem => ({
-          id: i.id as string,
-          renderItem: <Card card={i} />,
-        })
-      ),
+      items: nfts.map((token) => ({
+        id: Math.random().toString(),
+        renderItem: <Card data={token} />,
+      })),
     });
 
   return (
